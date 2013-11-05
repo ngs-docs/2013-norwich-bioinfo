@@ -44,8 +44,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'labibi'
-copyright = u'2012, C. Titus Brown'
+project = u'2013-norwich-bioinfo'
+copyright = u'2013, C. Titus Brown'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
