@@ -216,7 +216,7 @@ from using emacs)?  Add them to .gitignore and commit the changes.
 Testing command line scripts
 ----------------------------
 
-Put this in a file 'sqer/test_scripts.py'::
+Put this in a file 'tests/test_scripts.py'::
 
     import subprocess
     import os
