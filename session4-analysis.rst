@@ -45,14 +45,16 @@ Create a directory ``pipeline`` under sqer::
 
    mkdir pipeline
 
-and create ``pipeline/Makefile`` containing::
+and copy in the 'trinity-nematostella.fa.gz' file from the training files
+into this directory (any FASTA/FASTQ file will do here), gunzip it,
+and then rename it to ``assembly.fa``.
+
+Now, create ``pipeline/Makefile`` containing::
 
    all: lengths.txt
 
    lengths.txt: assembly.fa
    	../calc-lengths.py assembly.fa > lengths.txt
-
-.. @@grab assembly.fa from somewhere.
 
 Now, when you type 'make', it will run your analysis pipeline.
 (...pretend that 'calc-lengths.py' takes a long time or something :)

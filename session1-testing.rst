@@ -250,7 +250,10 @@ Add and commit::
 Regression tests with command line scripts
 ------------------------------------------
 
-Grab some data from somewhere @@ and put it in ``test-reads.fq``.
+Grab some data from somewhere (e.g. 25k.fq.gz from training files) and
+put it in ``test-reads.fq``.  You can subset the 25k.fq.gz file if you want::
+
+    gunzip -c 25k.fq.gz | head -400 > test-reads.fq
 
 Add another test to ``sqer/test_scripts.py``::
 
