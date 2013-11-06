@@ -198,3 +198,6 @@ Now, push this all to github::
    git push origin master
 
 and let's go configure it at http://readthedocs.org/.
+
+Reminder: under your github project, settings, service hooks, enable
+the 'readthedocs' service hook.
