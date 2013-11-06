@@ -1,9 +1,13 @@
-=====================
-git / version control
-=====================
+================================
+Session 2: git / version control
+================================
 
 Basic git
 =========
+
+Tutorial link:
+
+https://github.com/apawlik/TGAC-6-Nov-2013/tree/master/version-control
 
 Cover:
 

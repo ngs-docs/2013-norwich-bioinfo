@@ -1,6 +1,6 @@
-============================
-Python packages and installs
-============================
+=======================================
+Session 3: Python packages and installs
+=======================================
 
 Using virtualenv
 ================
@@ -27,7 +27,7 @@ In the sqer directory,
 
 1. grab the latest ez_setup.py from https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py::
 
-   curl -O https://bitbucket.org/pypa/setuptools/raw/19873119647deae8a68e9ed683317b9ee170a8d8/ez_setup.py
+    curl -O https://bitbucket.org/pypa/setuptools/raw/19873119647deae8a68e9ed683317b9ee170a8d8/ez_setup.py
 
 2. Put the following in setup.py::
 
@@ -47,14 +47,14 @@ In the sqer directory,
 
 3. Put the following in setup.cfg::
 
-   [nosetests]
-   verbosity = 2
+    [nosetests]
+    verbosity = 2
 
 Now you can do::
 
    python setup.py test
 
-and::
+to run the tests, and::
 
    python setup.py install
 

@@ -1,6 +1,6 @@
-=======================================
-Analysis pipelines and IPython Notebook
-=======================================
+==================================================
+Session 4: Analysis pipelines and IPython Notebook
+==================================================
 
 A slightly more useful sqer script
 ----------------------------------
@@ -100,7 +100,7 @@ Additional IPython resources:
 
 * The ipynb site: http://ipython.org/notebook.html
 * A gallery of interesting notebooks: https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks
-* The matplotlib gallery: matplotlib.org/gallery.html
+* The matplotlib gallery: http://matplotlib.org/gallery.html
 
 Note that you can use '%loadpy' in IPython Notebook to grab code from online
 and import it into your notebook automagically.

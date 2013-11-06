@@ -6,6 +6,8 @@
 2013 Bioinformatics Workshop at Norwich
 =======================================
 
+C. Titus Brown <ctb@msu.edu> and Alexandra Pawlik <a.pawlik@software.ac.uk>
+
 We will use `this Etherpad site
 <https://etherpad.mozilla.org/2013-norwich>`__ to distribute commands.
 
