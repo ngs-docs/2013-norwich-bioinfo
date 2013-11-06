@@ -14,7 +14,6 @@ Explain: minute cards; stick notes on monitors.
 .. @@ add links to project layout materials
 
 .. toctree::
-   :maxdepth: 2
 
    session1-testing
    session2-git

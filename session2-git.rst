@@ -1,8 +1,9 @@
-========
-More git
-========
+=====================
+git / version control
+=====================
 
-Stuff goes here.
+Basic git
+=========
 
 Cover:
 
@@ -26,6 +27,8 @@ Cover:
 * commenting on individual lines;
 
 * multiple pushes;
+
+* updating from another branch;
 
 * github markdown, including checklists!
 
