@@ -13,6 +13,10 @@ We will use `this Etherpad site
 
 Explain: minute cards; stick notes on monitors.
 
+The khmer project: https://github.com/ged-lab/khmer/
+
+The final 'sqer' project: https://github.com/ngs-docs/sqer-demo
+
 .. @@ add links to project layout materials
 
 .. toctree::
