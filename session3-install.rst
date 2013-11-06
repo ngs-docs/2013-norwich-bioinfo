@@ -9,12 +9,16 @@ To create a virtual environment::
 
    python -m virtualenv ~/env
 
-To activate it::
+To activate it as your default Python environment::
 
    . ~/env/bin/activate
 
 Now, even without root, you can do ``pip install`` of whatever packages
 you like.
+
+To deactivate it, ::
+
+   deactivate
 
 Building a 'setup.py'
 =====================
@@ -54,10 +58,20 @@ and::
 
    python setup.py install
 
-Remember to do::
+This will install 'sqer' so that (a) it's importable from anywhere, ::
+
+   python -c "import sqer"
+
+and (b) the script(s) are in your path so that::
+
+   count-read-bp.py data/test-reads.fa
+
+should work from anywhere.
+
+Remember to add and commit to git::
 
    git add setup.cfg setup.py
-   git commit -am "made it installable"
+   git commit -am "added install configuration"
 
 Note that if you create a .tar.gz, ::
 
@@ -71,6 +85,19 @@ you can now do::
 
 and this will also work with URLs to the .tar.gz as well as github
 files & release links...
+
+One final comments: 'git status' will show you that the directory is
+getting messy.  Add::
+
+   *.egg
+   *.egg-info
+   build
+
+to .gitignore, and then commit::
+
+   git commit -am "updated gitignore with setup.py detritus"
+
+It's probably time to do a 'git push origin master' too!
    
 Building a default/basic 'Makefile'
 ===================================
@@ -90,6 +117,19 @@ Put the following in 'Makefile' in the seqr/ directory::
    test:
 	python setup.py test
 
+.. note::
+
+   'make' is picky about tabs vs spaces -- the lines after the ':' need
+   to be indented with tabs to work properly.
+
+This will now let us do 'make' (which will execute the first target,
+'all'); 'make install'; 'make clean'; and 'make test'.  These will
+do the obvious things.
+
+The important thing here is that all of these are *standard* make
+commands.  If I see a Makefile in a repository, then I assume that
+it's got the commands above.  Convention, convention, convention!
+
 Remember to::
 
    git add Makefile
@@ -98,7 +138,8 @@ Remember to::
 Documentation
 =============
 
-We're going to build some docs using Sphinx and reStructuredText.
+We're going to build some docs using `Sphinx <http://sphinx-doc.org/>`__ and
+`reStructuredText <http://docutils.sourceforge.net/rst.html>`__.
 
 Do::
 

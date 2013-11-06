@@ -156,7 +156,7 @@ Writing a script
 ----------------
 
 Let's write something to let us use this from the command line.  Put the
-following code in ``count-reads.py``::
+following code in ``count-read-bp.py``::
 
    #! /usr/bin/env python
    import argparse
@@ -179,12 +179,12 @@ following code in ``count-reads.py``::
     if __name__ == '__main__':
        main()
 
-Next, 'chmod +x count-reads.py'.  This makes UNIX aware that it's an
+Next, 'chmod +x count-read-bp.py'.  This makes UNIX aware that it's an
 executable file.
 	   
 Try running it::
 
-    ./count-reads.py
+    ./count-read-bp.py
 
 Note the friendly error message! Note that you can use '-h', too.
 
@@ -201,14 +201,14 @@ Put::
 
 in a file 'reads.fa'.  Then::
 
-    ./count-reads.py reads.fa
+    ./count-read-bp.py reads.fa
 
 You should see '8 bp total'.  Great!
 
 Commit::
 
-   git add count-reads.py reads.fa
-   git commit -am "command-line script count-reads, plus test data"
+   git add count-read-bp.py reads.fa
+   git commit -am "command-line script count-read-bp, plus test data"
 
 Check with 'git status'. Do you have editor remainder files (like ~ files
 from using emacs)?  Add them to .gitignore and commit the changes.
@@ -228,7 +228,7 @@ Put this in a file 'sqer/test_scripts.py'::
 
 
     def test_count_reads():
-        scriptpath = os.path.join(sqerdir, 'count-reads.py')
+        scriptpath = os.path.join(sqerdir, 'count-read-bp.py')
         datapath = os.path.join(sqerdir, 'reads.fa')
         print thisdir, sqerdir, scriptpath, datapath
 
@@ -245,7 +245,7 @@ Now run 'nosetests' -- what does it say?
 Add and commit::
 
    git add tests/test_scripts.py
-   git commit -am "added test for the count-reads.py script"
+   git commit -am "added test for the count-read-bp.py script"
 
 Regression tests with command line scripts
 ------------------------------------------
@@ -255,7 +255,7 @@ Grab some data from somewhere @@ and put it in ``test-reads.fq``.
 Add another test to ``sqer/test_scripts.py``::
 
     def test_count_reads_2():
-        scriptpath = os.path.join(sqerdir, 'count-reads.py')
+        scriptpath = os.path.join(sqerdir, 'count-read-bp.py')
         datapath = os.path.join(sqerdir, 'test-reads.fq')
         print thisdir, sqerdir, scriptpath, datapath
 
