@@ -37,3 +37,10 @@ Cover:
 * github markdown, including checklists!
 
 * online editing of github files.
+
+External Resources
+==================
+
+* Github Flow description
+
+  http://scottchacon.com/2011/08/31/github-flow.html

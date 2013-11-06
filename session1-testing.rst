@@ -230,7 +230,6 @@ Put this in a file 'tests/test_scripts.py'::
     def test_count_reads():
         scriptpath = os.path.join(sqerdir, 'count-read-bp.py')
         datapath = os.path.join(sqerdir, 'reads.fa')
-        print thisdir, sqerdir, scriptpath, datapath
 
         p = subprocess.Popen([scriptpath, datapath],
                              stdout=subprocess.PIPE,
@@ -341,3 +340,12 @@ Advanced exercises
 
 4. Write a reservoir sampling algorithm.
 
+
+----
+
+External resources
+==================
+
+* An Introduction to the Nose Testing Framework
+
+  http://ivory.idyll.org/articles/nose-intro.html
