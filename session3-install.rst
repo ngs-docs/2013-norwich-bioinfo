@@ -145,9 +145,15 @@ Be sure to do::
    git add *
    git commit -am "added docs"
 
+And also add a rule to the top-level Makefile::
+
+   doc:
+	cd doc && make html
+
+(and git add/commit the Makefile changes.)
+
 Now, push this all to github::
 
    git push origin master
 
 and let's go configure it at http://readthedocs.org/.
-
