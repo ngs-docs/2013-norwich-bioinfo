@@ -119,7 +119,7 @@ Tests pass?  Great, add and commit it with git! ::
    git add tests
    git commit -am "initial tests"
 
-Now, let's add a new function, 'sum_bp_records', to ``sqer/__init__.py``.
+Now, let's add a new function, 'sum_bp_records', to ``sqer/__init__.py``. ::
 
    def sum_bp_records(records):
        total = 0
