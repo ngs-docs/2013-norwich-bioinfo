@@ -176,7 +176,7 @@ following code in ``count-read-bp.py``::
 
        print '%d bp total' % total
 
-    if __name__ == '__main__':
+   if __name__ == '__main__':
        main()
 
 Next, 'chmod +x count-read-bp.py'.  This makes UNIX aware that it's an
